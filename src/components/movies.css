@@ -1,0 +1,67 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Labrada:ital,wght@0,100..900;1,100..900&family=Supermercado+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gorditas:wght@400;700&display=swap');
+
+:root{
+    --color:orangered;
+    --color2: #73ff00;
+    --textfont: "Labrada", serif;
+    --titlefont: "Acme", sans-serif;
+    --subtexts: "Gorditas", serif;
+    --transition: all 0.2s ease;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-synthesis: none;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+}
+main{
+    width: 100%;
+    min-height: 100svh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #242424;
+    /* background-image:
+      radial-gradient(circle at 20% 30%, rgba(0, 149, 255, 0.25), transparent 50%),
+      linear-gradient(rgba(255, 60, 0, 0.2) 2px, transparent 5px),
+      linear-gradient(90deg, rgb(255, 94, 0, 0.20) 2px, transparent 5px);
+    background-size: cover, 80px 80px, 80px 80px; */
+}
+
+            /* TITLE */
+.title{
+    font-family: var(--titlefont);
+    color: var(--color);
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+article{
+    font-family: var(--textfont);
+}
+.head{
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border: 3px solid grey;
+}
+
+        /* SEARCHBAR */
+.moviegrid,.searchbar{
+    margin: 30px auto;
+    backdrop-filter: blur(3px);
+    border: 3px solid gray;
+}
+.searchbar input{
+    border: none;
+    border-bottom: 3px solid var(--color);
+    border-radius: 10px;
+    padding: 0 0 3px 7px;
+}
+.searchbar button{
+    font-size: 25px;
+}
